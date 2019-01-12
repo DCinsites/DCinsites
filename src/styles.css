@@ -1,24 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+center {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: 400;
+}
+/* HTML5 display-role reset for older browsers */
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #fafafa;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
 }
 
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #333333;
+/* --- Common Styles ---*/
+
+h1 {
+  font-size: 16px;
 }
 
-a,
-a:hover,
-a:focus {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
+/*----- Helper Classes -----*/
+
+html * {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.img-circle {
+  border-radius: 50%;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #0073aa;
+}
+
+::selection {
+  color: #fff;
+  background: #0073aa;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.custom-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.no-margin {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.sup-title {
+  display: inline-block;
+  font-size: 1em;
+  padding: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000;
+  margin: 0 0 20px 0;
+}
+
+.spacer {
+  width: 100%;
+  height: 50px;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  opacity: 1;
+  background-color: #f2f2f2;
+  z-index: 9999;
+  text-align: center;
+}
+
+#loading-image {
+  display: inline;
+  top: 40%;
+  position: relative;
+  z-index: 9999;
+}
+
+.spacer {
+  width: 100%;
+  height: 50px;
+}
+
+.spacer-big {
+  width: 100%;
+  height: 100px;
+}
+
+.error-message {
+  color: #ff3333;
+
+  margin-top: 5px;
+}
+
+.success-message {
+  color: #33cc33;
+
+  margin-top: 5px;
 }

@@ -1,0 +1,133 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <img class="header-dci-lg" src="assets/dci-lg.png" />
+      <img class="header-dci-sm" src="assets/dci-sm.png" />
+    </div>
+
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a [routerLink]="['/']"> <i class="fas fa-home"></i> Home </a>
+      </li>
+      <li>
+        <a [routerLink]="['/about']"> <i class="fas fa-info"></i> About Us </a>
+      </li>
+      <li>
+        <a [routerLink]="['/packages']"><i class="fas fa-info"></i>Packages</a>
+      </li>
+      <li>
+        <a [routerLink]="['/marketing']"
+          ><i class="fas fa-info"></i>Marketing</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="['/websites']"><i class="fas fa-info"></i>Websites</a>
+      </li>
+
+      <!-- TEMPLATE DROPDOWN
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fas fa-users"></i>
+                Social
+              </a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                  <a href="" target="_blank">Instagram</a>
+                </li>
+                <li>
+                  <a href="" target="_blank">Facebook</a>
+                </li> 
+              -->
+      <!-- 
+                  <li> TODO: Future Project
+                  <a [routerLink]="#">template</a>
+                </li>
+               
+      
+              </ul> -->
+      <li>
+        <a [routerLink]="['/portfolio']">
+          <i class="fas fa-folder-open"></i> Portfolio
+        </a>
+      </li>
+    </ul>
+
+    <ul class="list-unstyled CTAs">
+      <li><a [routerLink]="['/contact']"> Contact Us </a></li>
+      <li><a [routerLink]="['/legal']">Legal Jazz</a></li>
+      <li>
+        <a href="https://www.facebook.com/dcinsites" target="_blank"
+          ><i class="fab fa-facebook fa-2x"></i>Like</a
+        >
+      </li>
+      <li>
+        <a href="https://www.instagram.com/dcinsites" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i>Follow</a
+        >
+      </li>
+      <li>
+        <a href="https://www.twitter.com/dcinsites" target="_blank"
+          ><i class="fab fa-twitter fa-2x"></i>Follow</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="navbar-btn">
+          <span></span> <span></span> <span></span>
+        </button>
+        <button
+          class="btn btn-light d-inline-block d-lg-none ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-align-justify"></i>
+        </button>
+
+        <div>
+          <button
+            id="navbarSupportedContent"
+            class="navbar-btn collapse navbar-collapse"
+          >
+            <span></span> <span></span> <span></span>
+          </button>
+          <button
+            class="btn btn-light d-inline-block d-lg-none ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <ul class="nav navbar-nav ml-auto">
+            <!-- Change Nav items + add routerLink -->
+            <li class="nav-item active">
+              <a class="nav-link" [routerLink]="['/']">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/user']">User</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/pricing']">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/admin']">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>
