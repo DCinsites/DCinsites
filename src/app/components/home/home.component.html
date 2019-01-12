@@ -1,126 +1,172 @@
-<div class="wrapper animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000"
-    data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
-
-    <div class="main" id="main">
-        <!-- Main Section-->
-        <div class="hero-section app-hero">
-            <div class="container">
-                <div class="hero-content app-hero-content text-center">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-10">
-                            <h1 class="wow fadeInUp" data-wow-delay="0s">DCinsites</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">
-                                We don't just do Digital Marketing, we also build/update custom websites to lure in new
-                                customers while using SEO tools to get noticed on the web.
-                                <br class="hidden-xs">We are your Digital Marketing specialists on steroids!
-                            </p>
-                            <a mat-raised-button color="primary" data-wow-delay="0.2s" href="#">Learn More</a>
-                            <a mat-raised-button color="primary" data-wow-delay="0.2s" href="#">Contact Us</a>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="hero-image">
-                                <img class="img-fluid" src="assets/images/app_hero_1.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="wrapper animsition">
+ <!-- class="wrapper animsition"
+  data-animsition-in-class="fade-in"
+  data-animsition-in-duration="1000"
+  data-animsition-out-class="fade-out"
+  data-animsition-out-duration="1000" -->
+  <div class="main" id="main">
+    <!-- Main Section-->
+    <div class="hero-section app-hero">
+      <div class="container">
+        <div class="hero-content app-hero-content text-center">
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <h1 class="wow fadeInUp" data-wow-delay="0s">DCinsites</h1>
+              <p class="wow fadeInUp" data-wow-delay="0.2s">
+                We don't just do Digital Marketing, we also build/update custom
+                websites to lure in new customers while using SEO tools to get
+                noticed on the web. <br class="hidden-xs" />We are your Digital
+                Marketing specialists on steroids!
+              </p>
+              <a
+                mat-raised-button
+                color="primary"
+                data-wow-delay="0.2s"
+                [routerLink]="['/about']"
+                >Learn More</a
+              >
+              <a
+                mat-raised-button
+                color="primary"
+                data-wow-delay="0.2s"
+                [routerLink]="['/contact']"
+                >Contact Us</a
+              >
             </div>
-        </div>
-        <div class="services-section text-center" id="services">
-            <!-- Services section (small) with icons -->
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-md-8">
-                        <div class="services-content">
-                            <h1 class="wow fadeInUp" data-wow-delay="0s">Our services have so many perks.</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">
-                                At DCinsites we offer state of the art insights so you always know the progress of our
-                                work
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <div class="services">
-                            <div class="row">
-                                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
-                                    <div class="services-icon">
-                                        <img src="assets/logos/icon1.png" height="60" width="60" alt="Service" />
-                                    </div>
-                                    <div class="services-description">
-                                        <h1>Mega feature rich</h1>
-                                        <p>
-                                            We have a detailed, easy to use dashboard that shows analytics, weekly
-                                            reports, integrated chat for instant help, and so much more!
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="services-icon">
-                                        <img class="icon-2" src="assets/logos/icon2.png" height="60" width="60" alt="Service" />
-                                    </div>
-                                    <div class="services-description">
-                                        <h1>Fast and Robust</h1>
-                                        <p>
-                                            We build, design, and update websites using the Angular Framework which
-                                            provides
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="services-icon">
-                                        <img class="icon-3" src="assets/logos/icon3.png" height="60" width="60" alt="Service" />
-                                    </div>
-                                    <div class="services-description">
-                                        <h1>FLAT UI-Interface</h1>
-                                        <p>
-                                            Adminty is first ever admin dashboard template which release in Bootstrap 4
-                                            framework.
-                                            Intuitive feature rich design concept and color combination.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-12">
+              <div class="hero-image">
+                <img
+                  class="img-fluid"
+                  src="assets/images/app_hero_1.png"
+                  alt=""
+                />
+              </div>
             </div>
+          </div>
         </div>
-
-        <!-- Feature Image Big -->
-        <div class="feature_huge text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="assets/images/big_feature.png"
-                            alt="" style="max-width:100%" />
-                    </div>
-                    <div class="col-md-12 feature_list">
-                        <div class="row">
-                            <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
-                                <img src="assets/logos/feature_icon.png" alt="Feature" />
-                                <h1>Tursted Product</h1>
-                                <p>
-                                    We increasingly grow our talent and skills in admin dashboard development.
-                                </p>
-                            </div>
-                            <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
-                                <img src="assets/logos/feature_icon_2.png" alt="Feature" />
-                                <h1>Online Documentation</h1>
-                                <p>
-                                    Documentation helps you in every steps on your entire project.
-                                </p>
-                            </div>
-                            <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
-                                <img src="assets/logos/feature_icon_3.png" alt="Feature" />
-                                <h1>Free Consultations!</h1>
-                                <p>
-                                    Fast and accurate outline during support. Low turnaround time.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="services-section text-center" id="services">
+      <!-- Services section (small) with icons -->
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-8">
+            <div class="services-content">
+              <h1 class="wow fadeInUp" data-wow-delay="0s">
+                Our services have so many perks.
+              </h1>
+              <p class="wow fadeInUp" data-wow-delay="0.2s">
+                At DCinsites we offer state of the art insights so you always
+                know the progress of our work
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="services">
+              <div class="row">
+                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="services-icon">
+                    <img
+                      src="assets/logos/icon1.png"
+                      height="60"
+                      width="60"
+                      alt="Service"
+                    />
+                  </div>
+                  <div class="services-description">
+                    <h1>Mega feature rich</h1>
+                    <p>
+                      We have a detailed, easy to use dashboard that shows
+                      analytics, weekly reports, integrated chat for instant
+                      help, and so much more!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="services-icon">
+                    <img
+                      class="icon-2"
+                      src="assets/logos/icon2.png"
+                      height="60"
+                      width="60"
+                      alt="Service"
+                    />
+                  </div>
+                  <div class="services-description">
+                    <h1>Fast and Robust</h1>
+                    <p>
+                      We build, design, and update websites using the Angular
+                      Framework which provides
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="services-icon">
+                    <img
+                      class="icon-3"
+                      src="assets/logos/icon3.png"
+                      height="60"
+                      width="60"
+                      alt="Service"
+                    />
+                  </div>
+                  <div class="services-description">
+                    <h1>FLAT UI-Interface</h1>
+                    <p>
+                      Adminty is first ever admin dashboard template which
+                      release in Bootstrap 4 framework. Intuitive feature rich
+                      design concept and color combination.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Image Big -->
+    <div class="feature_huge text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img
+              class="img-fluid wow fadeInUp"
+              data-wow-delay="0.1s"
+              src="assets/images/big_feature.png"
+              alt=""
+              style="max-width:100%"
+            />
+          </div>
+          <div class="col-md-12 feature_list">
+            <div class="row">
+              <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                <img src="assets/logos/feature_icon.png" alt="Feature" />
+                <h1>Tursted Product</h1>
+                <p>
+                  We increasingly grow our talent and skills in admin dashboard
+                  development.
+                </p>
+              </div>
+              <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
+                <img src="assets/logos/feature_icon_2.png" alt="Feature" />
+                <h1>Online Documentation</h1>
+                <p>
+                  Documentation helps you in every steps on your entire project.
+                </p>
+              </div>
+              <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                <img src="assets/logos/feature_icon_3.png" alt="Feature" />
+                <h1>Free Consultations!</h1>
+                <p>
+                  Fast and accurate outline during support. Low turnaround time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

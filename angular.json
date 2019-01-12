@@ -26,9 +26,21 @@
                 {
                     "input": "src/material-styles.scss"
                 },
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/animsition.min.css",
+              "src/assets/css/ionicons.min.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css"
             ],
-            "scripts": []
+            "scripts": [
+                "src/assets/js/plugins.js",
+                "src/assets/js/animsition.min.js",
+                "src/assets/js/custom.js",
+                "src/assets/js/menu.js",
+                "src/assets/js/plugins.js"
+            ]
           },
           "configurations": {
             "production": {
